@@ -1,0 +1,63 @@
+body {
+    background-color: #f0ecff !important;
+}
+
+button {
+    border: none;
+}
+.svg-icon {
+    width: 1em;
+    height: 1em;
+}
+  
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: transparent;
+}
+  
+.svg-icon circle {
+    stroke: transparent;
+    stroke-width: 1;
+}
+
+output{
+width: 100%;
+min-height: 150px;
+display: flex;
+justify-content: flex-start;
+flex-wrap: wrap;
+gap: 15px;
+position: relative;
+border-radius: 5px;
+}
+  
+output .image{
+height: 150px;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+overflow: hidden;
+position: relative;
+}
+
+output .image img{
+height: 100%;
+width: 100%;
+}
+
+output .image span {
+position: absolute;
+top: -4px;
+right: 4px;
+cursor: pointer;
+font-size: 22px;
+color: white;
+}
+
+output .image span:hover {
+opacity: 0.8;
+}
+
+output .span--hidden{
+visibility: hidden;
+}
